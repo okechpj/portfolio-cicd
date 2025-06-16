@@ -28,6 +28,5 @@ jobs:
           sudo cp -r /tmp/portfolio/* /var/www/html/
           sudo systemctl restart nginx
         EOF
-        
     - name: Test Deployment
       run: curl http://${{ secrets.EC2_HOST }}
